@@ -4,9 +4,9 @@ require File.expand_path('../lib/schemy/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Ian C. Anderson"]
   gem.email         = ["anderson.ian.c@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Analyzes schema.rb to suggest new database indexes, providing a migration file that can be used directly.}
+  gem.summary       = %q{Analyzes schema.rb to suggest new database indexes.}
+  gem.homepage      = 'http://rubygems.org/gems/schemy'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }

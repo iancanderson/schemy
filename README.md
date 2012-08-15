@@ -1,6 +1,6 @@
 # Schemy
 
-TODO: Write a gem description
+Schemy analyzes schema.rb to suggest new database indexes, providing a migration file that can be used directly.
 
 ## Installation
 
