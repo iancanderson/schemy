@@ -4,21 +4,21 @@ Schemy analyzes schema.rb to suggest new database indexes, providing a migration
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your rails app's Gemfile in the development group:
 
-    gem 'schemy'
+    group :development do
+      gem 'schemy'
+    end
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install schemy
-
 ## Usage
 
-TODO: Write usage instructions here
+Within your rails app, run
+
+    bundle exec rake schemy:indexes
 
 ## Contributing
 
