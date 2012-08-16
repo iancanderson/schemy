@@ -8,8 +8,7 @@ require_relative 'fake_column'
 module ActiveRecord
   class Schema
 
-    DEFAULT_VALIDATORS = [AssociationIdIdentifierValidator, ForeignKeyValidator,
-        IdentifierValidator, TypeValidator]
+    DEFAULT_VALIDATORS = [CustomValidator, ForeignKeyValidator, TypeValidator]
 
     def self.define(options= {}, &block)
       schema = new
